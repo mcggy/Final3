@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>machine detail</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <h1 >Welcome to visit the machine detail</h1>
+   <div style="width:350;padding:5;float:left;height:570;">
+   <img src="<%=li[0].imagepath%>"><br>
+   <h2 align="left">
+    productID:<%= li[0].machineId %><br>
+    model:<%= li[0].model %><br>
+    price(RMB):<%= li[0].price %><br>
+	size:<%= li[0].size %><br>
+	capacity:<%= li[0].capacity %><br>
+	feature:<%= li[0].feature %><br>
+	store_num:<%= li[0].store_num %><br></h2>
+   </div>
+   <br><br><br>
+   <p style="font-size:20px" align="left"><a href="javascript:history.back()">goback</a><br><br><br>
+   <a  href="/buy?machineId=<%= li[0].machineId%>">buy</a></p>
+      
+  
+  </body>
+  </html>

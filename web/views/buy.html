@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>buying machine</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <h1>Welcome to buy the machine 	<%=machineId%> </h1>
+
+   <form action="http://localhost:6666/success"method="GET">
+   <fieldset>
+   <legend>Your information</legend>
+	<h3> 
+          Name:&nbsp;&nbsp;&nbsp;<input type="text" id="customerName" name="customerName"  ><br><br>
+          Phone:&nbsp;&nbsp;<input type="text" id="customerPhone" name="customerPhone"  ><br><br>
+		  Address:<input type="text" id="customerAddress" name="customerAddress" ><br> <br>
+		  machineId:<input type="text" id="machineId" name="machineId" value="<%=machineId%>" ><br><br>
+	  </h3>
+	</fieldset>
+   <br>
+   <h2 >payment</h2>
+   <h3><input type="radio" value="true" name="payment" checked>yes</h3> 
+   <h3><input type="radio" value="false" name="payment">no</h3> 
+   <br>
+   <h2 >delivery</h2>
+   <h3><input type="radio" value="true" name="delivery" >yes</h3> 
+   <h3><input type="radio" value="false" name="delivery" checked>no</h3> 
+   <br><br><br>
+   <input type="submit" value="continue"><br><br>
+   <input type="reset" value="ignore"><br><br>
+   <input type="button" name="goback" value="goback" onclick="javascript:history.back()" />
+   
+      </form>
+      
+  
+  </body>
+  </html>

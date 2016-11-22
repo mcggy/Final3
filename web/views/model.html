@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	  <style type="text/css">
+		  div {width:350;padding:5;float:left;height:570;}
+	  </style>
+  </head>
+  <body>
+	  <h1><%= title%>Washing Machine</h1>
+			<% for(i=0; i< list.length; i++) {%>  
+	  <div>
+		  <a href="/machinedetail?machineId=<%= list[i].machineId%>"> <img src = "<%= list[i].imagepath%>" width="400" height="570"> </a><br>
+      <h2 align="center">
+    productID:<%= list[i].machineId %><br>
+    model:<%= list[i].model %><br>
+    price(RMB):<%= list[i].price %></h2>
+	  </div> 
+        <% } %>  
+	  
+  </body>
+</html>
